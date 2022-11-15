@@ -3,8 +3,7 @@ import sys
 from cryptography.fernet import Fernet
 
 if __name__ == '__main__':
-    print('Enter path of file to decrypt: ')
-    filepath = input()
+    filepath = sys.argv[1] # path of file to be encrypted
 
     print('Enter fernet key: ') # base 64 format
     key = input()
